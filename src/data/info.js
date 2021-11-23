@@ -1,7 +1,7 @@
-const info = {
+const Info = {
   name: 'Thomas Friedrichs',
   email: 'friedrichs.tommy@gmail.com',
-  title: 'Web Developer'
+  title: 'Front End Engineer'
 }
 
-export default info;
+export default Info;
