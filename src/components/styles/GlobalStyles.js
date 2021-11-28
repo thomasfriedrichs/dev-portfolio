@@ -1,10 +1,20 @@
-import styled from "styled-components";
+import { createGlobalStyle } from "styled-components";
 
-export const GlobalStyle = styled.div`
+const GlobalStyle = createGlobalStyle`
  * {
-    font-family: 'Roboto', sans-serif;
+  font-family: 'Karla', sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
   }
+
+  h1 h2 {
+    font-family: 'Karla', sans-serif;
+  }
+
+  p {
+    font-family: 'Nunito', sans-serif;
+  }
 `
+
+export default GlobalStyle;
