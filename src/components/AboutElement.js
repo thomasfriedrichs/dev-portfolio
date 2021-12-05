@@ -4,17 +4,21 @@ import Colors from "./styles/themes/Colors";
 
 export const AboutWrapper = styled.div`
   position: relative;
-	height: 520px;
-	min-height: 400px;
+	height: 1220px;
 	width: 100%;
 	background-size: cover;
 	text-align: center;
 	background-color: ${Colors.offWhite};
 	background-size: cover;
 	padding-bottom: 0;
-  h1 {
-    padding: 50px;
-  }
+
+    h1 {
+      padding: 50px;
+    }
+
+    @media ${Sizes.laptop} {
+      height: 520px;
+    }
 `
 
 export const FlexContainer = styled.div`

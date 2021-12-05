@@ -4,7 +4,8 @@ const Info = {
   title: 'Front End Engineer',
   about: 'About Me',
   aboutText: '',
-  skillsTitle: 'Skills'
+  skillsTitle: 'Skills',
+  experienceTitle: 'Education & Experience'
 }
 
 export default Info;

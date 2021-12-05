@@ -4,6 +4,7 @@ import About from './components/About';
 import GlobalStyle from './components/styles/GlobalStyles';
 import Skills from './components/Skills';
 import Footer from './components/Footer';
+import Experience from './components/Experience';
 
 
 const App = () => {
@@ -13,6 +14,7 @@ const App = () => {
       <Header/>
       <About/>
       <Skills/>
+      <Experience/>
       <Footer/>
     </>
   );
