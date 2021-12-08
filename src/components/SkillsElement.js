@@ -1,6 +1,5 @@
 import styled from "styled-components";
 import Sizes from "./styles/themes/Sizes";
-import Colors from "./styles/themes/Colors";
 
 export const SkillsWrapper = styled.div`
   position: relative;
@@ -9,9 +8,10 @@ export const SkillsWrapper = styled.div`
 	width: 100%;
 	background-size: cover;
 	text-align: center;
-	background-color: ${Colors.grey};
+	background-color: ${({ theme }) => theme.color4};
 	background-size: cover;
 	padding-bottom: 0;
+  color: ${({ theme }) => theme.font};
 
     @media ${Sizes.laptop} {
       height: 400px;

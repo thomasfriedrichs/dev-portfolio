@@ -42,6 +42,7 @@ const Experience = () => {
         <Title>{Info.experienceTitle}</Title>
         <VerticalTimeline>
           <VerticalTimelineElement
+            className="vertical-timeline-element"
             icon={<span class="iconify" data-icon="akar-icons:react-fill"></span>}
             date={Validate.time}
             dateClassName={ 'validateDate' }
@@ -58,6 +59,7 @@ const Experience = () => {
             </TechWrapper>
           </VerticalTimelineElement>
           <VerticalTimelineElement
+            className="vertical-timeline-element"
             icon={<span class="iconify" data-icon="whh:html"></span>}
             date={Epicodus.time}
             iconStyle={{
@@ -73,6 +75,8 @@ const Experience = () => {
             </TechWrapper>
           </VerticalTimelineElement>
           <VerticalTimelineElement
+            className="vertical-timeline-element"
+            id="hourglass"
             icon={<span class="iconify" data-icon="fontisto:hourglass-end"></span>}
             iconStyle={{
               background: "#412234",

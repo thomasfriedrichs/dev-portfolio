@@ -1,14 +1,28 @@
 import React from "react";
 import { Icon } from '@iconify/react';
-import { HeaderWrapper } from "./HeaderElement";
+import { func, string } from 'prop-types';
+import { 
+  HeaderWrapper, 
+  Links, 
+  TopDiv, 
+  Button 
+} from "./HeaderElement";
 import Info from './../data/info';
 
-const Header = () => {
+const Header = (props) => {
+
+  const { theme, setTheme } = props;
+
+  const themeToggler = () => {
+    console.log('theme', theme)
+    theme === 'light' ? setTheme('dark') : setTheme('light')
+  }
+  
   return (
     <>
       <HeaderWrapper>
-        <div className ="top">
-          <a 
+        <TopDiv className ="top">
+          <a
             href="https://github.com/thomasfriedrichs/dev-portfolio"
             target="_blank" 
             rel="noreferrer"
@@ -19,26 +33,60 @@ const Header = () => {
               icon="fontisto:github"
             />
           </a>
-          <span
+          <Button 
             className="iconify"
             id="theme-switch"
-            data-icon="emojione-monotone:crescent-moon"
+            onClick={themeToggler}
+            
           >
-          </span>
-        </div>
+            <Icon
+              className="iconify"
+              id="theme-switch"
+              icon={theme === 'light' ? "emojione-monotone:crescent-moon" : "akar-icons:sun"}
+            />
+          </Button>
+        </TopDiv>
         <div>
-          <span 
+          <Icon 
             className="iconify"
             id="laptop"
-            data-icon="la:laptop-code" 
+            icon="la:laptop-code" 
           >
-          </span>
+          </Icon>
           <h1>{Info.name}</h1>
           <h2>{Info.title}</h2>
+          <Links>
+            <a 
+              href='https://github.com/thomasfriedrichs'
+              target='_blank'
+              rel='noreferrer'
+            >
+              <Icon className='links' icon='fontisto:github'/>
+            </a>
+            <a 
+              href='https://www.linkedin.com/in/thomas-friedrichs/'
+              target='_blank' 
+              rel='noreferrer'
+            >
+              <Icon className='links' icon='akar-icons:linkedin-fill'/>
+            </a>
+            <a 
+              href=''
+              target='_blank' 
+              rel='noreferrer'
+            >
+              <Icon className='links' icon='ant-design:file-pdf-filled'/>
+            </a>
+          </Links>
         </div>
       </HeaderWrapper>
     </>
   );
 };
+
+Header.propTypes = {
+  theme: string.isRequired,
+  setTheme: func.isRequired,
+}
 
 export default Header;

@@ -9,7 +9,7 @@ import {
   Lights 
 } from "./AboutElement";
 import Info from './../data/info';
-import profileImg from '../images/profile-pic.png';
+import profileImg from '../assets/images/profile-pic.png';
 
 const About = () => {
   return (

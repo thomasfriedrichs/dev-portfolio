@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import Sizes from "./styles/themes/Sizes";
-import Colors from "./styles/themes/Colors";
+// import Colors, { lightTheme } from "./styles/themes/Colors";
 
 export const AboutWrapper = styled.div`
   position: relative;
@@ -8,9 +8,10 @@ export const AboutWrapper = styled.div`
 	width: 100%;
 	background-size: cover;
 	text-align: center;
-	background-color: ${Colors.offWhite};
+	background-color: ${({ theme }) => theme.color5};
 	background-size: cover;
 	padding-bottom: 0;
+  color: ${({ theme }) => theme.font};
 
     h1 {
       padding: 50px;
@@ -63,7 +64,7 @@ export const AboutText = styled.p`
       height: 250px;
     }
 `
-export const Lights = styled.div` 
+export const Lights = styled.div`
   height: 9%;
   width: 100%;
   border: solid 1px;

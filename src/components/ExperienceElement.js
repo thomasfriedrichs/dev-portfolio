@@ -1,6 +1,5 @@
 import styled from "styled-components";
 import Sizes from "./styles/themes/Sizes";
-import Colors from "./styles/themes/Colors";
 
 export const ExperienceWrapper = styled.div`
   position: relative;
@@ -9,10 +8,10 @@ export const ExperienceWrapper = styled.div`
 	width: 100%;
 	background-size: cover;
 	text-align: center;
-	background-color: ${Colors.mistyrose};
+	background-color: ${({ theme }) => theme.color2};
 	background-size: cover;
 	padding-bottom: 0;
-
+  color: ${({ theme }) => theme.font};
   .epicodus {
     @media ${Sizes.laptop} {
       text-align: right;
@@ -30,17 +29,18 @@ export const ExperienceWrapper = styled.div`
   }
 `
 
-
 export const Title = styled.h1` 
   padding: 50px;
+  color: ${({ theme }) => theme.font};
+
 `
 
 export const H2 = styled.h2` 
-  color: black;
 `
 
 export const H3 = styled.h3` 
   font-weight: 200;
+  color: black;
 `
 
 export const TechWrapper = styled.div` 
@@ -49,6 +49,7 @@ export const TechWrapper = styled.div`
   align-items: flex-start;
   justify-content: space-around;
   margin: 10px;
+  color: ${({ theme }) => theme.font};
 `
 
 export const TechPill = styled.p` 
@@ -59,5 +60,5 @@ export const TechPill = styled.p`
 	padding: 5px 8px 5px 8px !important;
 	vertical-align: baseline;
   border-radius: 5px;
-  background-color: ${Colors.lightgrey};
+  background-color: ${({ theme }) => theme.color4};
 `

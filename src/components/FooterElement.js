@@ -1,6 +1,5 @@
 import styled from "styled-components";
 import Sizes from "./styles/themes/Sizes";
-import Colors from "./styles/themes/Colors";
 
 export const FooterWrapper = styled.div` 
   position: relative;
@@ -9,7 +8,7 @@ export const FooterWrapper = styled.div`
 	width: 100%;
 	background-size: cover;
 	text-align: center;
-	background-color: ${Colors.black};
+	background-color: black;
 	background-size: cover;
 	padding-bottom: 0;
   display: flex;
@@ -20,7 +19,7 @@ export const FooterWrapper = styled.div`
     }
 
   .iconify {
-    color: ${Colors.white};
+    color: white;
     margin: 100px;
     height: 70px;
     width: 70px;
