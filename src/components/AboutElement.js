@@ -1,6 +1,5 @@
 import styled from "styled-components";
 import Sizes from "./styles/themes/Sizes";
-// import Colors, { lightTheme } from "./styles/themes/Colors";
 
 export const AboutWrapper = styled.div`
   position: relative;
@@ -58,10 +57,12 @@ export const AboutText = styled.p`
   border-radius: 10px;
   width: 80%;
   height: 500px;
+  font-size: 38px;
 
     @media ${Sizes.laptop} {
       width: 50%;
       height: 250px;
+      font-size: 24px;
     }
 `
 export const Lights = styled.div`
@@ -71,6 +72,8 @@ export const Lights = styled.div`
   border-color: lightgrey;
   border-radius: 5px;
   display: flex;
+  font-size: 15px;
+  margin-bottom: 5px;
 
   .iconify {
     align-items: center;

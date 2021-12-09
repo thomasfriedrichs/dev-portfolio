@@ -1,6 +1,5 @@
 import React, { useState} from 'react';
 import { ThemeProvider } from 'styled-components';
-// import { ThemeContext } from 'styled-components';
 import Header from './components/Header';
 import About from './components/About';
 import GlobalStyle from './components/styles/GlobalStyles';

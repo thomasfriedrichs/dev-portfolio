@@ -31,3 +31,16 @@ export const FooterWrapper = styled.div`
     }
   }
 `
+
+export const Email = styled.div` 
+  height: 100px;
+  color: white;
+  background-color: black;
+  text-align: center;
+  font-size: 30px;
+
+  @media ${Sizes.laptop} {
+    height: 50px;
+    font-size: 18px;
+  }
+`

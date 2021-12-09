@@ -1,6 +1,7 @@
-import { Icon } from '@iconify/react';
 import React from 'react'
-import { FooterWrapper } from './FooterElement';
+import { Icon } from '@iconify/react';
+import { FooterWrapper, Email } from './FooterElement';
+import Info from './../data/info';
 
 const Footer = () => {
   return (
@@ -21,6 +22,9 @@ const Footer = () => {
           <Icon className='iconify' icon='akar-icons:linkedin-fill'/>
         </a>
       </FooterWrapper>
+      <Email>
+        {Info.email}
+      </Email>
     </>
   )
 }
