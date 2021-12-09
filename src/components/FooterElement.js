@@ -14,9 +14,9 @@ export const FooterWrapper = styled.div`
   display: flex;
   justify-content: center;
 
-    @media ${Sizes.laptop} {
-      height: 120px;
-    }
+  @media ${Sizes.laptop} {
+    height: 120px;
+  }
 
   .iconify {
     color: white;
@@ -24,10 +24,10 @@ export const FooterWrapper = styled.div`
     height: 70px;
     width: 70px;
 
-      @media ${Sizes.laptop} {
-        margin: 50px;
-        height: 30px;
-        width: 30px;
-      }
+    @media ${Sizes.laptop} {
+      margin: 50px;
+      height: 30px;
+      width: 30px;
+    }
   }
 `

@@ -20,11 +20,9 @@ const Experience = () => {
 
   const epicodusTechnology = Object.values(EpicodusTech).map((technology, i) => {
     return(
-      <div>
         <TechPill pill key={i}>
           {technology}
         </TechPill>
-      </div>
     )
   })
 

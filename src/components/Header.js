@@ -2,12 +2,13 @@ import React from "react";
 import { Icon } from '@iconify/react';
 import { func, string } from 'prop-types';
 import { 
-  HeaderWrapper, 
+  HeaderWrapper,
   Links, 
   TopDiv, 
   Button 
 } from "./HeaderElement";
 import Info from './../data/info';
+import Pdf from '../assets/thomasfriedrichsResume1 (1).PDF'
 
 const Header = (props) => {
 
@@ -71,9 +72,9 @@ const Header = (props) => {
               <Icon className='links' icon='akar-icons:linkedin-fill'/>
             </a>
             <a 
-              href=''
+              href={Pdf}
               target='_blank' 
-              rel='noreferrer'
+              rel='noopener noreferrer'
             >
               <Icon className='links' icon='ant-design:file-pdf-filled'/>
             </a>
