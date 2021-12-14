@@ -9,15 +9,16 @@ export const AboutWrapper = styled.div`
 	text-align: center;
 	background-color: ${({ theme }) => theme.color5};
 	background-size: cover;
-	padding-bottom: 0;
+	padding-bottom: 100px;
   color: ${({ theme }) => theme.font};
 
     h1 {
       padding: 50px;
+      text-align: center;
     }
 
     @media ${Sizes.laptop} {
-      height: 520px;
+      height: 620px;
     }
 `
 
@@ -31,7 +32,7 @@ export const FlexContainer = styled.div`
     @media ${Sizes.laptop} {
       flex-direction: row;
     }
-`
+` 
 
 export const ImageCrop = styled.div`
   width: 40%;
