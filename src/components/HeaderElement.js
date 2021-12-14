@@ -37,7 +37,7 @@ export const HeaderWrapper = styled.div `
 			margin-top: 100px;
 			height: 150px;
 			width: 150px;
-			@media ${Sizes.laptop} {
+			@media screen and (min-width: ${Sizes.laptop}) {
 				margin-top: 150px;
 			}
 		}
@@ -61,7 +61,7 @@ export const Links = styled.div`
 	display: flex;
 	justify-content: space-around;
 
-	@media ${Sizes.laptop} {
+	@media screen and (min-width: ${Sizes.laptop}) {
 		height: 150px;
 		padding: 40px 500px;
 		
@@ -72,7 +72,7 @@ export const Links = styled.div`
 		width: 50px;
 		margin-top: 20px;
 
-		@media ${Sizes.laptop} {
+		@media screen and (min-width: ${Sizes.laptop}) {
 			height: 30px;
 			width: 30px;
 		}

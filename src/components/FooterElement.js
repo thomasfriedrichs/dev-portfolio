@@ -14,7 +14,7 @@ export const FooterWrapper = styled.div`
   display: flex;
   justify-content: center;
 
-  @media ${Sizes.laptop} {
+  @media screen and (min-width: ${Sizes.laptop}) {
     height: 120px;
   }
 
@@ -24,7 +24,7 @@ export const FooterWrapper = styled.div`
     height: 70px;
     width: 70px;
 
-    @media ${Sizes.laptop} {
+    @media screen and (min-width: ${Sizes.laptop}) {
       margin: 50px;
       height: 30px;
       width: 30px;
@@ -39,7 +39,7 @@ export const Email = styled.div`
   text-align: center;
   font-size: 30px;
 
-  @media ${Sizes.laptop} {
+  @media screen and (min-width: ${Sizes.laptop}) {
     height: 50px;
     font-size: 18px;
   }

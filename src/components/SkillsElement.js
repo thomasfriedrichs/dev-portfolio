@@ -13,7 +13,7 @@ export const SkillsWrapper = styled.div`
 	padding-bottom: 0;
   color: ${({ theme }) => theme.font};
 
-    @media ${Sizes.laptop} {
+    @media screen and (min-width: ${Sizes.laptop}) {
       height: 400px;
     }
 `
@@ -31,7 +31,7 @@ export const IconWrapper = styled.div`
   justify-content: space-around;
   text-align: center;
 
-    @media ${Sizes.laptop} {
+    @media screen and (min-width: ${Sizes.laptop}) {
       flex-direction: row;
       margin-top: 100px;
       display: flex;
@@ -49,7 +49,7 @@ export const IconBox = styled.div`
     width: 100px;
     height: 100px;
 
-    @media ${Sizes.laptop} {
+    @media screen and (min-width: ${Sizes.laptop}) {
       width: 50px;
       height: 50px;
       padding-top: 10px;

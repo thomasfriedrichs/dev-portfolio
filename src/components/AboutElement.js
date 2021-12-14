@@ -17,8 +17,12 @@ export const AboutWrapper = styled.div`
       text-align: center;
     }
 
-    @media ${Sizes.laptop} {
+    @media screen and (min-width: ${Sizes.laptop}) {
       height: 620px;
+    }
+
+    @media screen and (min-width: ${Sizes.laptopL}) {
+      height: 800px;
     }
 `
 
@@ -29,7 +33,7 @@ export const FlexContainer = styled.div`
   align-items: center;
   margin: 0 auto;
 
-    @media ${Sizes.laptop} {
+    @media screen and (min-width: ${Sizes.laptop}) {
       flex-direction: row;
     }
 ` 
@@ -42,7 +46,7 @@ export const ImageCrop = styled.div`
   box-shadow: 2px 2px 10px 1px #888888;
   margin: 50px;
 
-    @media ${Sizes.laptop} {
+    @media screen and (min-width: ${Sizes.laptop}) {
       width: 20%;
     }
 `
@@ -59,19 +63,20 @@ export const AboutText = styled.p`
   width: 80%;
   height: 500px;
   font-size: 38px;
+  text-align: left;
+  padding: 2px 5px;
 
-    @media ${Sizes.laptop} {
+    @media screen and (min-width: ${Sizes.laptop}) {
       width: 50%;
       height: 250px;
       font-size: 24px;
     }
 `
-export const Lights = styled.div`
+export const Lights = styled.span`
   height: 9%;
   width: 100%;
-  border: solid 1px;
+  border-bottom: solid 1px;
   border-color: lightgrey;
-  border-radius: 5px;
   display: flex;
   font-size: 15px;
   margin-bottom: 5px;
@@ -80,7 +85,7 @@ export const Lights = styled.div`
     align-items: center;
     margin: 10px;
 
-      @media ${Sizes.laptop} {
+      @media screen and (min-width: ${Sizes.laptop}) {
       margin: 2px 5px;
       }
   }

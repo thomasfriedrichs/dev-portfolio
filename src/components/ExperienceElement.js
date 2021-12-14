@@ -13,13 +13,13 @@ export const ExperienceWrapper = styled.div`
 	padding-bottom: 0;
   color: ${({ theme }) => theme.font};
   .epicodus {
-    @media ${Sizes.laptop} {
+    @media screen and (min-width: ${Sizes.laptop}) {
       text-align: right;
     }
   }
 
   .validate {
-    @media ${Sizes.laptop} {
+    @media screen and (min-width: ${Sizes.laptop}) {
       text-align: left;
     }
   }
