@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import Sizes from "./styles/themes/Sizes";
+import Sizes from "../styles/themes/Sizes";
 
 export const HeaderWrapper = styled.div `
   position: relative;

@@ -12,9 +12,9 @@ import {
   H2,
   H3
 } from './ExperienceElement';
-import Info from '../data/info';
-import { Epicodus, EpicodusTech } from '../data/epicodus';
-import { Validate, ValidateTech } from '../data/validate';
+import Info from '../../data/info';
+import { Epicodus, EpicodusTech } from '../../data/epicodus';
+import { Validate, ValidateTech } from '../../data/validate';
 
 const Experience = () => {
 

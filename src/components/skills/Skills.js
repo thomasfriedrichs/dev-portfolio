@@ -1,8 +1,8 @@
 import React from 'react'
 import { Icon } from '@iconify/react';
 import { SkillsWrapper, Title, IconWrapper, IconBox } from './SkillsElement';
-import Info from '../data/info';
-import Icons from '../data/icons';
+import Info from '../../data/info';
+import Icons from '../../data/icons';
 
 const Skills = () => {
   return (

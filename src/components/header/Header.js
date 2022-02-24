@@ -7,8 +7,8 @@ import {
   TopDiv, 
   Button 
 } from "./HeaderElement";
-import Info from './../data/info';
-import Pdf from '../assets/thomasfriedrichsResume1 (1).PDF'
+import Info from '../../data/info';
+import Pdf from '../../assets/thomasfriedrichsResume1 (1).PDF'
 
 const Header = (props) => {
 

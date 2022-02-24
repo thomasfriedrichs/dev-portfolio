@@ -8,8 +8,8 @@ import {
   ImageCrop, 
   Lights 
 } from "./AboutElement";
-import Info from './../data/info';
-import profileImg from '../assets/images/profile-pic.png';
+import Info from '../../data/info';
+import profileImg from '../../assets/images/profile-pic.png';
 
 const About = () => {
   return (

@@ -1,7 +1,7 @@
 import React from 'react'
 import { Icon } from '@iconify/react';
 import { FooterWrapper, Email } from './FooterElement';
-import Info from './../data/info';
+import Info from '../../data/info';
 
 const Footer = () => {
   return (
