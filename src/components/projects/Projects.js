@@ -21,7 +21,7 @@ const Projects = () => {
             className='iconify' 
             icon='arcticons:crypto-prices'
           />
-          <p>Market Data</p>
+          <p>Akimbo</p>
         </ProjectBox>
       </ProjectWrapper>
     </ProjectsWrapper>
