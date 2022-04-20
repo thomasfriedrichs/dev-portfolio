@@ -3,7 +3,7 @@ import { Icon } from '@iconify/react';
 import {
   ProjectsWrapper,
   Title,
-  ProjectWrapper,
+  ProjectFlexWrapper,
   ProjectBox
 } from './ProjectsElement';
 
@@ -12,7 +12,7 @@ const Projects = () => {
   return(
     <ProjectsWrapper>
       <Title>Projects</Title>
-      <ProjectWrapper>
+      <ProjectFlexWrapper>
         <ProjectBox 
           href='https://crypto-data-thomasfriedrichs.vercel.app/'
           target='_blank'
@@ -23,7 +23,17 @@ const Projects = () => {
           />
           <p>Akimbo</p>
         </ProjectBox>
-      </ProjectWrapper>
+        <ProjectBox
+          href='https://york-hair-thomasfriedrichs.vercel.app/'
+          target='_blank'
+        >
+          <Icon
+            className='iconify'
+            icon='openmoji:scissors'
+          />
+          <p>Roland York Hair</p>
+        </ProjectBox>
+      </ProjectFlexWrapper>
     </ProjectsWrapper>
   )
 }

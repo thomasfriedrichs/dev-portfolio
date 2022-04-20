@@ -13,16 +13,16 @@ export const ProjectsWrapper = styled.div`
 	padding-bottom: 0;
   color: ${({ theme }) => theme.font};
 
-    @media screen and (min-width: ${Sizes.laptop}) {
-      height: 400px;
-    }
+  @media screen and (min-width: ${Sizes.laptop}) {
+    height: 400px;
+  }
 `
 
 export const Title = styled.h1`
   padding-top: 50px;
 `
 
-export const ProjectWrapper = styled.div` 
+export const ProjectFlexWrapper = styled.div` 
   margin-top: 100px;
   display: grid;
   grid-template-columns: 120px 120px 120px;
@@ -35,7 +35,7 @@ export const ProjectWrapper = styled.div`
       flex-direction: row;
       margin-top: 100px;
       display: flex;
-      justify-content: space-around;
+      justify-content: space-evenly;
     }
 `
 
@@ -46,6 +46,7 @@ export const ProjectBox = styled.a`
   text-align: center;
   color: ${({ theme }) => theme.font} !important;
   text-decoration: none;
+  cursor: pointer;
 
   .iconify {
     width: 100px;
